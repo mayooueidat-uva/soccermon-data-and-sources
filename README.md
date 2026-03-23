@@ -5,4 +5,4 @@ Resources that weren't in a palatable format when downloaded (such as web pages,
 
 Everything else is downloaded as a PDF. 
 
-The resource title given in the table in HW7 matches the file or link name. 
+The article title given in the table in HW7 matches the file name or the label I put on the link. 
