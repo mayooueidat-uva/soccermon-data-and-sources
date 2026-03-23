@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://arxiv.org/html/2601.19479v1 -->
+<html lang="en" data-theme="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach</title>
+<!--Generated on Tue Jan 27 11:11:42 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<link href="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/arxiv-html-papers-20250916.css" rel="stylesheet" type="text/css">
+<script src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/bootstrap.bundle.min.js.download"></script>
+<script src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/html2canvas.min.js.download"></script>
+<script src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/addons_new.js.download"></script>
+<script src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/feedbackOverlay.js.download"></script>
+<!--<base href="/html/2601.19479v1/">--><base href="."><link rel="stylesheet" href="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/utz6mli.css"><link rel="icon" type="image/png" href="https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png" sizes="32x32"></head>
+<body><header class="mob_header">
+    <div class="html-header-logo">
+      <a href="https://arxiv.org/">
+        <img alt="logo" class="logomark" role="presentation" width="100" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/arxiv-logomark-small-white.svg">
+        <span class="sr-only">Back to arXiv</span>
+      </a>
+    </div>
+
+    <!--TOC, dark mode, links-->
+    <div class="html-header-nav">
+      <!--back to abstract-->
+      
+        <a class="nav-link ar5iv-footer-button hover-effect" aria-label="Back to abstract page" href="https://arxiv.org/abs/2601.19479v1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 512 512" fill="#ffffff" aria-hidden="true">
+            <path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 192 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128zM160 96c17.7 0 32-14.3 32-32s-14.3-32-32-32L96 32C43 32 0 75 0 128L0 384c0 53 43 96 96 96l64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32l0-256c0-17.7 14.3-32 32-32l64 0z"></path>
+        </svg>
+        </a>
+      <!--dark mode-->
+      <a class="ar5iv-toggle-color-scheme" href="javascript:toggleColorScheme()" title="Toggle dark/light mode" aria-label="System preference">
+        <label id="automatic-tog" class="toggle-icon" title="Switch to light mode" for="__palette_3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"></path></svg>
+        </label>
+        <label id="light-tog" class="toggle-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+        </label>
+        <label id="dark-tog" class="toggle-icon" title="Switch to system preference" for="__palette_2" hidden="">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+        </label>
+      </a>
+      <!--nav-->
+      <button class="navbar-toggler ar5iv-footer-button" type="button" data-bs-theme="dark" data-bs-toggle="collapse" aria-expanded="false" data-bs-target=".ltx_page_main &gt;.ltx_TOC.mobile" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" style="border:none; margin-right: 0em;">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512" aria-hidden="true" role="img" fill="#ffffff"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+      </button>
+    </div>
+    </header><header class="desktop_header">
+    <div class="html-header-logo">
+      <a href="https://arxiv.org/">
+          <img alt="logo" class="logo" role="presentation" width="100" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/arxiv-logo-one-color-white.svg">
+          <span class="sr-only">Back to arXiv</span>
+      </a>
+    </div>
+    <div class="html-header-message" role="banner">
+        <p>This is <strong>experimental HTML</strong> to improve accessibility. We invite you to report rendering errors. <span class="sr-only">Use Alt+Y to toggle on accessible reporting links and Alt+Shift+Y to toggle off.</span> Learn more <a href="https://info.arxiv.org/about/accessible_HTML.html" target="_blank">about this project</a> and <a href="https://info.arxiv.org/help/submit_latex_best_practices.html" target="_blank">help improve conversions</a>.
+        </p>
+    </div>
+    <nav class="html-header-nav">
+      <a class="ar5iv-footer-button hover-effect" href="https://info.arxiv.org/about/accessible_HTML.html" target="_blank">Why HTML?</a>
+      <a class="ar5iv-footer-button hover-effect" target="_blank" href="https://arxiv.org/html/2601.19479v1/#myForm" onclick="event.preventDefault(); var modal = document.getElementById(&#39;myForm&#39;); modal.style.display = &#39;block&#39;; bugReportState.setInitiateWay(&#39;Header&#39;);">Report Issue</a>
+      <a class="ar5iv-footer-button hover-effect" href="https://arxiv.org/abs/2601.19479v1">Back to Abstract</a>
+      <a class="ar5iv-footer-button hover-effect" href="https://arxiv.org/pdf/2601.19479v1" target="_blank">Download PDF</a>
+      <a class="ar5iv-toggle-color-scheme" href="javascript:toggleColorScheme()" title="Toggle dark/light mode">
+        <label id="automatic-tog" class="toggle-icon" title="Switch to light mode" for="__palette_3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"></path></svg>
+        </label>
+        <label id="light-tog" class="toggle-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+        </label>
+        <label id="dark-tog" class="toggle-icon" title="Switch to system preference" for="__palette_2" hidden="">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+        </label>
+      </a>
+    </nav></header>
+
+<div class="ltx_page_main" id="main">
+
+<div class="ltx_page_content"><div class="package-alerts ltx_document" role="status" aria-label="Conversion errors have been found">
+      <button aria-label="Dismiss alert" onclick="closePopup()">
+          <span aria-hidden="true"><svg role="presentation" width="20" height="20" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
+          <path d="M0.549989 4.44999L4.44999 0.549988L43.45 39.55L39.55 43.45L0.549989 4.44999Z"></path>
+          <path d="M39.55 0.549988L43.45 4.44999L4.44999 43.45L0.549988 39.55L39.55 0.549988Z"></path>
+          </svg></span>
+      </button>
+      <p>HTML conversions <a href="https://info.dev.arxiv.org/about/accessibility_html_error_messages.html" target="_blank">sometimes display errors</a> due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on.</p>
+          <ul arial-label="Unsupported packages used in this paper">
+              <li>failed: interact.cls</li>
+          </ul>
+      <p>Authors: achieve the best HTML results from your LaTeX submissions by following these <a href="https://info.arxiv.org/help/submit_latex_best_practices.html" target="_blank">best practices</a>.</p>
+    </div><div id="target-section" class="section"><a id="license-tr" href="https://info.arxiv.org/help/license/index.html#licenses-available">License: CC BY 4.0</a><div id="watermark-tr">arXiv:2601.19479v1 [cs.LG] 27 Jan 2026</div></div>
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Time-to-Injury Forecasting in Elite Female Football: A DeepHit Survival Approach</h1><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">
+<span class="ltx_ERROR undefined" id="id1.1.id1">\name</span>Victoria Catterall<sup class="ltx_sup" id="id2.2.id2">a</sup>, Cise Midoglu<sup class="ltx_sup" id="id3.3.id3">b</sup>, Stephen Lynch<sup class="ltx_sup" id="id4.4.id4">a</sup>
+</span><span class="ltx_author_notes">CONTACT S. Lynch Email: s.lynch@lboro.ac.uk</span></span>
+</div><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_classification">
+<h6 class="ltx_title ltx_title_classification">keywords: </h6><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+Athlete monitoring; data visualisation; DeepHit modelling; injury; soccer; women
+
+</div>
+<div class="ltx_para ltx_noindent" id="p1">
+<span class="ltx_inline-block"><svg class="ltx_picture" height="337.55" id="p1.pic1" overflow="visible" version="1.1" viewBox="0 0 600 337.55" width="600"><g fill="#000000" stroke="#000000" stroke-width="0.4pt" style="--ltx-stroke-color:#000000;--ltx-fill-color:#000000;" transform="translate(0,337.55) matrix(1 0 0 -1 0 0)"><g fill="#F0D9D6" fill-opacity="1.0" style="--ltx-fill-color:#F0D9D6;"><path d="M 0 0 L 0 337.55 L 600 337.55 L 600 0 Z" style="stroke:none"></path></g><g fill="#F0D9D6" fill-opacity="1.0" style="--ltx-fill-color:#F0D9D6;"><path d="M 0.69 0.69 L 0.69 336.85 L 599.31 336.85 L 599.31 0.69 Z" style="stroke:none"></path></g><g fill-opacity="1.0" transform="matrix(1.0 0.0 0.0 1.0 8.99 11.68)"><foreignobject color="#000000" height="319.56" overflow="visible" style="--ltx-fg-color:#000000;--ltx-fo-width:42.06em;--ltx-fo-height:22.9em;--ltx-fo-depth:0.19em;" transform="matrix(1 0 0 -1 0 316.87)" width="582.01"><span class="ltx_foreignobject_container"><span class="ltx_foreignobject_content"><span class="ltx_inline-logical-block ltx_minipage ltx_align_bottom" id="p1.pic1.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.1" style="width:42.06em;">
+<span class="ltx_para ltx_noindent" id="p1.pic1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.p1">
+<span class="ltx_p" id="p1.pic1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.p1.1"><span class="ltx_text ltx_font_bold" id="p1.pic1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.p1.1.1" style="font-size:144%;--ltx-fg-color:#A6281E;">Abstract</span></span>
+</span>
+<span class="ltx_para" id="p1.pic1.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.1.p2">
+<span class="ltx_p" id="p1.pic1.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.1.p2.1">Injury occurrence in football poses significant challenges for athletes and teams, carrying personal, competitive, and financial consequences. While machine learning has been applied to injury prediction before, existing approaches often rely on static pre-season data and binary outcomes, limiting their real-world utility. This study investigates the feasibility of using a DeepHit neural network to forecast time-to-injury from longitudinal athlete monitoring data, while providing interpretable predictions. The analysis utilised the publicly available SoccerMon dataset, containing two seasons of training, match, and wellness records from elite female footballers. Data was pre-processed through cleaning, feature engineering, and the application of three imputation strategies. Baseline models (Random Forest, XGBoost, Logistic Regression) were optimised via grid search for benchmarking, while the DeepHit model, implemented with a multilayer perceptron backbone, was evaluated using chronological and leave-one-player-out (LOPO) validation. DeepHit achieved a concordance index of 0.762, outperforming baseline models and delivering individualised, time-varying risk estimates. Shapley Additive Explanations (SHAP) identified clinically relevant predictors consistent with established risk factors, enhancing interpretability. Overall, this study provides a novel proof of concept: survival modelling with DeepHit shows strong potential to advance injury forecasting in football, offering accurate, explainable, and actionable insights for injury prevention across competitive levels.</span>
+</span></span></span></span></foreignobject></g></g></svg><button class="sr-only button" style="display: none;">Report issue for preceding element</button></span>
+</div>
+<div class="ltx_pagination ltx_role_start_2_columns"></div>
+<section class="ltx_section" id="Sx1">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Introduction</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx1.p1">
+<p class="ltx_p" id="Sx1.p1.1">Football is considered the most popular sport globally. It exerts a profound social, cultural, and financial influence on communities, and there are approximately 265 million active players worldwide (Hulteen et al., 2017). Yet injury remains a universal challenge in the sport, costing professional clubs an estimated £45 million per season in medical care and lost revenue (Eliakim et al., 2020). For players, injuries bring pain, reduced motivation, and anxiety over recovery and career prospects (Borg, Falzon &amp; Muscat, 2021) whilst fan engagement, and team performance and cohesion also suffer (Hägglund et al., 2013). Protecting athletes from injury is therefore both a moral and strategic responsibility for clubs and coaches. There is a substantial body of research addressing injury prevention in football; however, less than 25% of this literature focuses specifically on female players (John et al., 2025). This significant gender disparity in research focus necessitates immediate attention to ensure evidence-based injury mitigation strategies are equally available for female athletes.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx1.p2">
+<p class="ltx_p" id="Sx1.p2.1">Machine learning (ML)-based injury forecasting has emerged as an effective tool in elite sport, surpassing traditional statistical methods (Rossi, Pappalardo &amp; Cintia, 2021). Effective ML implementation, however, requires large-scale, high-quality datasets to meaningfully capture complex, multimodal relationships necessary for real-time, individualized athlete forecasts (Van Eetvelde et al., 2021; Ghosh et al., 2023). High-quality data collection is a significant challenge in resource-limited settings such as women’s and youth football (Angelova-Igova &amp; Naydenova, 2023). Even where comprehensive monitoring datasets exist in elite football, competitive and financial constraints typically restrict the open sharing of anonymised data, thereby limiting knowledge dissemination (Eliakim et al., 2020). The advancement of ML-driven forecasting critically relies on increasing the availability of open-access datasets. To maximise utility and model generalisability, curators must prioritise well-labelled features, minimised data missingness (via high adherence), objective injury reporting, and diverse player demographics (e.g., sex, age, competition level) (Mandorino et al., 2023). Predictive accuracy is enhanced by including longitudinal internal and external load measures (e.g., RPE, heart rate) (Zhu, Jiang &amp; Yamamoto, 2022), supplemented by subjective metrics like readiness or soreness (Castilla-López &amp; Romero-Franco, 2024).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx1.p3">
+<p class="ltx_p" id="Sx1.p3.1">Due to the rarity of large-scale athlete monitoring datasets available, most models still rely on static pre-season data to predict injury outcome in the subsequent season. These models are rarely validated in female cohorts and lack clinical utility as they are unable to adjust to mid-season environmental changes (Leckey et al., 2024). Binary classification algorithms like Random Forest and XGBoost often yield the best performance (Leckey et al., 2024), however these models cannot capture temporal dependencies or cumulative workload effects central to injury development (Delecroix et al., 2018). Time-series modelling offers greater clinical utility by identifying short-term risk fluctuations that allow timely training adjustments rather than season-wide caution. For example, survival analysis models estimate the likelihood of injury within specific time windows while accounting for censored observations (Turkson, Ayiah-Mensah &amp; Nimoh, 2021). Although, previous Cox regression survival models in sport have only modelled time to first-injury-event (Mahmood, Ullah &amp; Finch, 2014), so they require further development to handle recurrent injuries and finer temporal granularity (Jarmann, 2023). The DeepHit survival model (Lee, Yoon &amp; Schaar, 2020) has been shown to outperform traditional survival models in the medical sector. It has been shown to make accurate short-term prognoses for cancer thrombosis, and cardiovascular disease outcomes (Shen et al., 2024; Mantha et al., 2024; Wang et al., 2024), so warrants further development in the context of sports injury too.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx1.p4">
+<p class="ltx_p" id="Sx1.p4.1">The application of DeepHit modelling could be enhanced by improving model explainability to increase trust amongst players and practitioners (Rossi, Pappalardo &amp; Cintia, 2021). Without explainability, coaches cannot identify the causes of increased injury risk or adjust training accordingly. Because injury risk factors are highly individual and fluctuate weekly (Mandorino et al., 2023), unguided interpretation can lead to misinformed decisions. Even accurate models lose practical value if their predictions cannot be meaningfully applied in real time - and may even heighten anxiety or hesitant play when players are labelled “high risk” which increases injury likelihood (Slimani et al., 2018). Ethical risks also arise from potential bias, which could unjustifiably exclude players from training or competition (Musat et al., 2024).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx1.p5">
+<p class="ltx_p" id="Sx1.p5.1">Therefore, the primary aim of this study is to establish the feasibility and predictive capability of a DeepHit survival model for sport-injury forecasting using longitudinal athlete monitoring data. It promotes the use of the SoccerMon dataset (Midoglu et al., 2024) as a rich, female-centric resource, featuring both objective and subjective metrics, to address the gender disparity in sports medicine literature. This work delivers an accurate and interpretable ML model designed to directly inform proactive injury risk management protocols and optimise athlete wellbeing.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_section" id="Sx2">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Methodology</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<section class="ltx_subsection" id="Sx2.SSx1">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Data Collection</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx1.p1">
+<p class="ltx_p" id="Sx2.SSx1.p1.1">Data was sourced from the Team B files within the public SoccerMon dataset (Midoglu et al., 2024). Additional data access was granted to Team B’s objective injury reports which were used instead of the self-reported injury in the public dataset to improve predictive accuracy and minimise noise. Athlete data was collected via two systems. Subjective data was self-reported by players using the PmSys Athlete Monitoring System (Johansen et al., 2020), whilst objective training data was collected via the STATSports APEX GNSS tracking system, using GPS systems and heart rate monitors to gather metrics on speed, positioning, and exertion. The dataset, collected in 2020–2021 from two elite Norwegian women’s first-division football teams, contains training, match, and injury data (see Table 1). It has been anonymised with informed consent obtained from all participants (Midoglu et al., 2024).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_table" id="Sx2.T1">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 1: </span>Features within the SoccerMon dataset used in model construction.</figcaption>
+<div class="ltx_inline-block ltx_align_center ltx_transformed_outer" id="Sx2.T1.1" style="width:345.0pt;height:328.3pt;vertical-align:-162.7pt;"><span class="ltx_transformed_inner" style="transform:translate(-67.7pt,64.4pt) scale(0.718224778404159,0.718224778404159) ;">
+<table class="ltx_tabular ltx_align_middle" id="Sx2.T1.1.1">
+<tbody><tr class="ltx_tr" id="Sx2.T1.1.1.1">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_tt" id="Sx2.T1.1.1.1.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.1.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.1.1.1.1" style="width:85.4pt;"><span class="ltx_text ltx_font_bold" id="Sx2.T1.1.1.1.1.1.1.1" style="font-size:80%;">Feature</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_tt" id="Sx2.T1.1.1.1.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.1.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.1.2.1.1" style="width:199.2pt;"><span class="ltx_text ltx_font_bold" id="Sx2.T1.1.1.1.2.1.1.1" style="font-size:80%;">Definition</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_tt" id="Sx2.T1.1.1.1.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.1.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.1.3.1.1" style="width:156.5pt;"><span class="ltx_text ltx_font_bold" id="Sx2.T1.1.1.1.3.1.1.1" style="font-size:80%;">Notes</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.2">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t" id="Sx2.T1.1.1.2.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.2.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.2.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.2.1.1.1.1" style="font-size:80%;">Daily load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t" id="Sx2.T1.1.1.2.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.2.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.2.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.2.2.1.1.1" style="font-size:80%;">Daily training load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_t" id="Sx2.T1.1.1.2.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.2.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.2.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.2.3.1.1.1" style="font-size:80%;">Sum of session RPE per day</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.3">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.3.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.3.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.3.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.3.1.1.1.1" style="font-size:80%;">ATL</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.3.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.3.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.3.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.3.2.1.1.1" style="font-size:80%;">Acute training load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.3.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.3.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.3.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.3.3.1.1.1" style="font-size:80%;">Average training load over past 7 days</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.4">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.4.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.4.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.4.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.4.1.1.1.1" style="font-size:80%;">Weekly load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.4.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.4.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.4.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.4.2.1.1.1" style="font-size:80%;">Weekly training load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.4.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.4.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.4.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.4.3.1.1.1" style="font-size:80%;">Sum of training load over past 7 days</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.5">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.5.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.5.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.5.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.5.1.1.1.1" style="font-size:80%;">Monotony</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.5.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.5.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.5.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.5.2.1.1.1" style="font-size:80%;">Training load monotony</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.5.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.5.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.5.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.5.3.1.1.1" style="font-size:80%;">Day to day variability in training load</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.6">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.6.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.6.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.6.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.6.1.1.1.1" style="font-size:80%;">Strain</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.6.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.6.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.6.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.6.2.1.1.1" style="font-size:80%;">Training strain</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.6.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.6.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.6.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.6.3.1.1.1" style="font-size:80%;">Training load x monotony</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.7">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.7.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.7.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.7.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.7.1.1.1.1" style="font-size:80%;">ACWR</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.7.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.7.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.7.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.7.2.1.1.1" style="font-size:80%;">Acute:chronic workload ratio</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.7.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.7.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.7.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.7.3.1.1.1" style="font-size:80%;">Measure of consistency between short- and long-term training load</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.8">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.8.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.8.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.8.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.8.1.1.1.1" style="font-size:80%;">CTL28</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.8.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.8.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.8.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.8.2.1.1.1" style="font-size:80%;">28 day chronic training load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.8.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.8.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.8.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.8.3.1.1.1" style="font-size:80%;">Sum of training load over past 28 days</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.9">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.9.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.9.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.9.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.9.1.1.1.1" style="font-size:80%;">CTL42</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.9.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.9.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.9.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.9.2.1.1.1" style="font-size:80%;">42 day chronic training load</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.9.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.9.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.9.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.9.3.1.1.1" style="font-size:80%;">Sum of training load over past 42 days</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.10">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.10.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.10.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.10.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.10.1.1.1.1" style="font-size:80%;">Fatigue</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.10.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.10.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.10.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.10.2.1.1.1" style="font-size:80%;">Self-reported fatigue level</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.10.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.11">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.11.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.11.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.11.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.11.1.1.1.1" style="font-size:80%;">Mood</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.11.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.11.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.11.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.11.2.1.1.1" style="font-size:80%;">Self-reported mood</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.11.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.12">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.12.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.12.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.12.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.12.1.1.1.1" style="font-size:80%;">Readiness</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.12.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.12.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.12.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.12.2.1.1.1" style="font-size:80%;">Self-reported readiness to train</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.12.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.13">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.13.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.13.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.13.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.13.1.1.1.1" style="font-size:80%;">Sleep duration</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.13.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.13.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.13.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.13.2.1.1.1" style="font-size:80%;">Self-reported sleep duration</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.13.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.13.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.13.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.13.3.1.1.1" style="font-size:80%;">Supposed to be measured by the athlete objectively</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.14">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.14.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.14.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.14.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.14.1.1.1.1" style="font-size:80%;">Soreness</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.14.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.14.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.14.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.14.2.1.1.1" style="font-size:80%;">Self-reported muscle soreness</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.14.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.15">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.15.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.15.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.15.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.15.1.1.1.1" style="font-size:80%;">Stress</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.15.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.15.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.15.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.15.2.1.1.1" style="font-size:80%;">Self-reported stress level</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.15.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.16">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.16.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.16.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.16.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.16.1.1.1.1" style="font-size:80%;">RPE</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.16.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.16.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.16.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.16.2.1.1.1" style="font-size:80%;">Rate of perceived exertion</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.16.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.16.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.16.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.16.3.1.1.1" style="font-size:80%;">Subjective measure of how challenging a training session was</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.17">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.17.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.17.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.17.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.17.1.1.1.1" style="font-size:80%;">sRPE</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.17.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.17.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.17.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.17.2.1.1.1" style="font-size:80%;">Session RPE</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.17.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.17.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.17.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.17.3.1.1.1" style="font-size:80%;">RPE x session duration</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.18">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.18.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.18.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.18.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.18.1.1.1.1" style="font-size:80%;">duration_subj</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.18.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.18.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.18.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.18.2.1.1.1" style="font-size:80%;">Subjective duration</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.18.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.18.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.18.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.18.3.1.1.1" style="font-size:80%;">How long the athlete judged the session to be</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.19">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.19.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.19.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.19.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.19.1.1.1.1" style="font-size:80%;">duration_obj</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.19.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.19.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.19.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.19.2.1.1.1" style="font-size:80%;">Objective duration</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.19.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.19.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.19.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.19.3.1.1.1" style="font-size:80%;">How long the session lasted</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.20">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.20.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.20.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.20.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.20.1.1.1.1" style="font-size:80%;">Speed_km_h_mean</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.20.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.20.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.20.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.20.2.1.1.1" style="font-size:80%;">Average running speed (kilometers per hour)</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.20.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.20.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.20.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.20.3.1.1.1" style="font-size:80%;">GPS measurement</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.21">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.21.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.21.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.21.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.21.1.1.1.1" style="font-size:80%;">Speed_km_h_max</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.21.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.21.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.21.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.21.2.1.1.1" style="font-size:80%;">Maximum running speed (kilometers per hour)</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.21.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.21.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.21.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.21.3.1.1.1" style="font-size:80%;">GPS measurement</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.22">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.22.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.22.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.22.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.22.1.1.1.1" style="font-size:80%;">Speed_km_h_std</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.22.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.22.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.22.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.22.2.1.1.1" style="font-size:80%;">Standard deviation in running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.22.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.22.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.22.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.22.3.1.1.1" style="font-size:80%;">Quantifies within-session speed variability</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.23">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.23.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.23.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.23.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.23.1.1.1.1" style="font-size:80%;">sp_lir_p</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.23.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.23.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.23.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.23.2.1.1.1" style="font-size:80%;">Proportion of training spent at low intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.23.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.24">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.24.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.24.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.24.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.24.1.1.1.1" style="font-size:80%;">sp_lir_t</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.24.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.24.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.24.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.24.2.1.1.1" style="font-size:80%;">Time spent at low intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.24.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.25">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.25.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.25.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.25.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.25.1.1.1.1" style="font-size:80%;">sp_lir_d</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.25.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.25.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.25.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.25.2.1.1.1" style="font-size:80%;">Distance covered at low intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.25.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.26">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.26.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.26.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.26.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.26.1.1.1.1" style="font-size:80%;">sp_mir_p</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.26.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.26.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.26.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.26.2.1.1.1" style="font-size:80%;">Proportion of training spent at medium intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.26.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.27">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.27.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.27.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.27.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.27.1.1.1.1" style="font-size:80%;">sp_mir_t</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.27.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.27.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.27.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.27.2.1.1.1" style="font-size:80%;">Time spent at medium intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.27.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.28">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.28.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.28.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.28.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.28.1.1.1.1" style="font-size:80%;">sp_mir_d</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.28.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.28.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.28.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.28.2.1.1.1" style="font-size:80%;">Distance covered at medium intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.28.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.29">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.29.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.29.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.29.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.29.1.1.1.1" style="font-size:80%;">sp_hir_p</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.29.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.29.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.29.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.29.2.1.1.1" style="font-size:80%;">Proportion of training spent at high intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.29.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.30">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.30.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.30.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.30.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.30.1.1.1.1" style="font-size:80%;">sp_hir_t</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.30.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.30.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.30.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.30.2.1.1.1" style="font-size:80%;">Time spent at high intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.30.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.31">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.31.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.31.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.31.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.31.1.1.1.1" style="font-size:80%;">sp_hir_d</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.31.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.31.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.31.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.31.2.1.1.1" style="font-size:80%;">Distance covered at high intensity running speed</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.31.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.32">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.32.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.32.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.32.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.32.1.1.1.1" style="font-size:80%;">sp_spr_p</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.32.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.32.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.32.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.32.2.1.1.1" style="font-size:80%;">Proportion of training spent sprinting</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.32.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.33">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.33.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.33.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.33.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.33.1.1.1.1" style="font-size:80%;">sp_spr_t</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.33.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.33.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.33.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.33.2.1.1.1" style="font-size:80%;">Time spent sprinting</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.33.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.34">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.34.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.34.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.34.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.34.1.1.1.1" style="font-size:80%;">sp_spr_d</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.34.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.34.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.34.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.34.2.1.1.1" style="font-size:80%;">Distance covered whilst sprinting</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_top" id="Sx2.T1.1.1.34.3"></td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.35">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.35.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.35.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.35.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.35.1.1.1.1" style="font-size:80%;">Distance</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.35.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.35.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.35.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.35.2.1.1.1" style="font-size:80%;">Distance covered overall (km)</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.35.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.35.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.35.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.35.3.1.1.1" style="font-size:80%;">GPS measurement</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.36">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.36.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.36.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.36.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.36.1.1.1.1" style="font-size:80%;">distance_per_min</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.36.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.36.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.36.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.36.2.1.1.1" style="font-size:80%;">Average distance covered per minute</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.36.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.36.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.36.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.36.3.1.1.1" style="font-size:80%;">distance  duration_obj</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.37">
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.37.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.37.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.37.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.37.1.1.1.1" style="font-size:80%;">subjective_missingness_7d</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.37.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.37.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.37.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.37.2.1.1.1" style="font-size:80%;">Proportion of subjective questionnaires that the athlete did not complete in the past 7 days</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top" id="Sx2.T1.1.1.37.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.37.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.37.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.37.3.1.1.1" style="font-size:80%;">Calculated feature - not in original dataset</span></span>
+</span>
+</td>
+</tr>
+<tr class="ltx_tr" id="Sx2.T1.1.1.38">
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb" id="Sx2.T1.1.1.38.1">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.38.1.1">
+<span class="ltx_p" id="Sx2.T1.1.1.38.1.1.1" style="width:85.4pt;"><span class="ltx_text" id="Sx2.T1.1.1.38.1.1.1.1" style="font-size:80%;">past_injury_count</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb" id="Sx2.T1.1.1.38.2">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.38.2.1">
+<span class="ltx_p" id="Sx2.T1.1.1.38.2.1.1" style="width:199.2pt;"><span class="ltx_text" id="Sx2.T1.1.1.38.2.1.1.1" style="font-size:80%;">Cumulative count of injuries present in the dataset per athlete</span></span>
+</span>
+</td>
+<td class="ltx_td ltx_align_justify ltx_align_top ltx_border_bb" id="Sx2.T1.1.1.38.3">
+<span class="ltx_inline-block ltx_align_top" id="Sx2.T1.1.1.38.3.1">
+<span class="ltx_p" id="Sx2.T1.1.1.38.3.1.1" style="width:156.5pt;"><span class="ltx_text" id="Sx2.T1.1.1.38.3.1.1.1" style="font-size:80%;">Calculated feature - not in original dataset</span></span>
+</span>
+</td>
+</tr>
+</tbody></table>
+</span></div>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+<section class="ltx_subsection" id="Sx2.SSx2">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Data Preparation</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx2.p1">
+<p class="ltx_p" id="Sx2.SSx2.p1.1">Individual feature files were consolidated into a single dataset for analysis. Exploratory data analysis was performed using histograms to examine feature distributions and identify outliers arising from GPS or heart rate monitor signalling errors. Maximum speeds of over 32 kilometers per hour were excluded as physiologically implausible (Vescovi, 2018). Sessions longer than 200 minutes were excluded as signalling errors (Silva et al., 2023), as were running distances exceeding 16 kilometres. In a typical match, players cover between 9 and 11 kilometres (Datson et al., 2017); however, values up to 16 kilometres were retained because histogram inspection indicated a substantial number of valid observations within this range.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx2.SSx2.p2">
+<p class="ltx_p" id="Sx2.SSx2.p2.1">Previous injuries increase the risk of future injury, so a cumulative count of previous injuries was generated (Gashi et al., 2023). A second derived feature was a weekly indicator capturing the proportion of missing responses in players’ daily subjective questionnaires. It was hypothesised that incomplete reporting may signal disengagement from training or recovery protocols, which has been shown to increase injury risk (Matijašević and Rajković Vuletić, 2024). After feature derivation, missing values were imputed using three different trial methods. The first method replaced missing entries with each player’s median value for that feature. The second was a bespoke approach that positioned a player’s values relative to their teammates over the preceding two weeks and generated replacements that maintained this relative standing on days with missing data. The third applied linear interpolation imputation. Histograms and kernel density estimates (KDEs) were produced to compare feature distributions before and after imputation, and correlation coefficients assessed the preservation of associations with injury occurrence. Features that continued to exhibit substantial missingness following imputation were removed to reduce dimensionality in the machine learning models (Salam et al., 2021).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsection" id="Sx2.SSx3">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Baseline Models</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx3.p1">
+<p class="ltx_p" id="Sx2.SSx3.p1.1">To confirm the strength of the dataset for predictive injury-risk forecasting, three common high-performing baseline models (XGBoost, Random Forest and Logistic Regression) were built and trained to use current-day data to predict next-day injury-risk (Leckey et al,. 2024). They were optimised using a grid search method and evaluated using a bespoke weighted formula which prioritised the models’ F1 score and recall but also considered precision and AUC (Figure 1). Accuracy was not emphasized due to the highly imbalanced dataset used. Both greedy feature selection and recursive feature elimination were tested to optimise the features used in the models to maximise the efficiency, generalisability, and accuracy of the prediction models by reducing dimensionality (Camattari et al., 2024; Theerthagiri and Vidya, 2022). Principal component analysis was also considered but rejected since it reduces model interpretability and can negatively affect the performance of non-linear ML models (Reddy et al., 2020). To prevent data leakage, models were trained on datasets split chronologically (Yang, Li and Jiang, 2024), and oversampling of the injured class was applied to training data to address class imbalance (Mujahid et al., 2024).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_figure" id="Sx2.F1"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="197" id="Sx2.F1.g1" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/fig1.png" width="509">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Grid Search method used, including custom evaluation formula and different feature selection techniques.</figcaption>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+<section class="ltx_subsection" id="Sx2.SSx4">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Baseline Look-Back and Forecasting Windows</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx4.p1">
+<p class="ltx_p" id="Sx2.SSx4.p1.1">Once the initial baseline models were created, the forecasting horizon window was iteratively expanded to 3, 5, 7, 10, and 14 days in length, as was look-back data input window. For each window, rolling averages of the features were computed to capture recent trends, and outcome labels were assigned a value of 1 if an injury occurred within the subsequent prediction horizon. These were also evaluated using F1 score, AUC, precision and recall and the same grid search method was used to optimise the model architecture.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsection" id="Sx2.SSx5">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">DeepHit Model</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx5.p1">
+<p class="ltx_p" id="Sx2.SSx5.p1.1">A standard DeepHit model was initialised with a multilayer perceptron (MLP) backbone rather than a recurrent neural network (RNN) backbone due to data limitations. The dataset was reformatted to include a time-to-event column, where the value decreased from 7 (seven days before injury) to 1 (one day before injury). An event indicator was also created, where 1 denoted an injury and 0 indicated censoring (i.e., no injury observed during the data collection period). The model was implemented with a 21-day input window and a 7-day prediction horizon, consistent with a design that had previously demonstrated success in survival modelling on this dataset (Jarmann, 2023). All features were standardised using a standard scaler to ensure comparability across variables and to improve neural network training stability.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx2.SSx5.p2">
+<p class="ltx_p" id="Sx2.SSx5.p2.1">The DeepHit model was first evaluated using a version trained on a chronological split of the dataset, replicating how the system would be applied in practice. This evaluation was then repeated for each dataset generated by each imputation method. The concordance index (C-index) was selected as the primary evaluation metric here, as it measures the model’s ability to correctly rank players by relative injury risk - an outcome directly relevant to coaching decisions (Park et al., 2021) and is the standard metric in survival analysis evaluation (Longato, Vettoretti, and Di Camillo, 2020). To further assess generalisability, a leave-one-player-out (LOPO) validation procedure was implemented; the model was iteratively trained on all but one player and then tested on the excluded individual, with the process repeated for every player. This method is particularly valuable in smaller, player-level datasets, as it reduces the likelihood of the model overfitting to individual injury histories and provides a stronger indication of its ability to adapt to unseen players (Lin et al., 2023). Performance per player was assessed using the C-index, and predicted survival times were converted into daily risk estimates, which were compared against observed injury events using player-level plots.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsection" id="Sx2.SSx6">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Explainability</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx2.SSx6.p1">
+<p class="ltx_p" id="Sx2.SSx6.p1.1">To investigate differences in model performance across players following LOPO validation, a correlation analysis was conducted to identify any underlying systematic patterns. For players with the highest C-index values, SHAP analyses were performed to determine their key individual injury risk factors both across the full season and on specific high-risk days. These insights can inform the development of player profiles to support individualized long-term training strategies and guide coaches in making targeted, short-term adjustments to training protocols on days of elevated injury risk.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+</section>
+<section class="ltx_section" id="Sx3">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Results</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<section class="ltx_subsection" id="Sx3.SSx1">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Exploratory Data Analysis</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx1.p1">
+<p class="ltx_p" id="Sx3.SSx1.p1.1">Exploratory data analysis found patterns of missingness by player and feature, and the distribution of injuries within the dataset. The dataset comprised 37 players tracked over two seasons, with adherence to data collection varying across individuals. During this period, 43 injuries were recorded; 24 injuries were classified as acute and 19 as overuse, with the thighs and knees representing the most frequently injured body parts. After preparation, the dataset comprised 39 features with varying degrees of missingness across players and variables. More injuries were recorded in the second season than in the first, and only 21 players were present from the start of data collection. There was more missingness in subjective than objective features and 15 out of the 37 players had approximately half their data missing on training days (Figure 2).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_figure" id="Sx3.F2"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="373" id="Sx3.F2.g1" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/fig2.png" width="598">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Distribution of data points in the cleaned dataset across 37 players over two football seasons (322 days recorded). Red circles indicate injury occurrences (n = 43).</figcaption>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+<section class="ltx_subsection" id="Sx3.SSx2">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Imputation Methods</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx2.p1">
+<p class="ltx_p" id="Sx3.SSx2.p1.1">The dataset comprised 4,449 player-date observations. Three imputation strategies were evaluated to address data missingness: median imputation, a bespoke formula, and linear interpolation. Median imputation resolved the highest proportion of missing values but substantially altered the overall data distribution. The bespoke formula imputed the fewest missing values, but did not significantly disturb the data distribution or alter univariate correlations with injury occurrence. Linear interpolation preserved the dataset distribution most closely and was the second most effective at reducing missingness, also without materially affecting univariate correlations with injury occurrence. Used in combination with the DeepHit model, the bespoke formula resulted in the best predictive performance.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsection" id="Sx3.SSx3">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Baseline Models</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx3.p1">
+<p class="ltx_p" id="Sx3.SSx3.p1.1">After grid search optimisation, the Random Forest model achieved the highest predictive performance when using current day data to predict next-day injury risk (F1=0.533, AUC=0.779, precision=1.000, recall=0.364). XGBoost followed behind (F1=0.429, AUC=0.876, precision=1.000, recall=0.271), and Logistic Regression demonstrated the worst predictive performance (F1=0.071, AUC=0.758, precision=0.037, recall=0.833), see Table 2. Model optimisation involved iterating through various input and output window combinations. While models offering the greatest predictive lead time and the shortest input window are highly advantageous in a practical sports setting as they allow for long-term planning even for new players, models with a forecasting window larger than one day led to significant reductions in performance, so this line of investigation was not pursued further.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_table" id="Sx3.T2">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 2: </span>Performance metrics for XGBoost, Random Forest, and Logistic Regression models using previous-day data to predict injury occurrence.</figcaption>
+<table class="ltx_tabular ltx_centering ltx_align_middle" id="Sx3.T2.1">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr" id="Sx3.T2.1.1.1">
+<td class="ltx_td ltx_align_left ltx_border_tt" id="Sx3.T2.1.1.1.1"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.1.1" style="font-size:80%;">Model</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt" id="Sx3.T2.1.1.1.2"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.2.1" style="font-size:80%;">F1 score</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt" id="Sx3.T2.1.1.1.3"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.3.1" style="font-size:80%;">Precision</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt" id="Sx3.T2.1.1.1.4"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.4.1" style="font-size:80%;">Recall</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt" id="Sx3.T2.1.1.1.5"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.5.1" style="font-size:80%;">AUC</span></td>
+<td class="ltx_td ltx_align_center ltx_border_tt" id="Sx3.T2.1.1.1.6"><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.6.1" style="font-size:80%;">No. Features</span></td>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt" id="Sx3.T2.1.1.1.7">
+<span class="ltx_text" id="Sx3.T2.1.1.1.7.1"></span><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.7.2" style="font-size:80%;"> <span class="ltx_text" id="Sx3.T2.1.1.1.7.2.1">
+<span class="ltx_tabular ltx_align_middle" id="Sx3.T2.1.1.1.7.2.1.1">
+<span class="ltx_tr" id="Sx3.T2.1.1.1.7.2.1.1.1">
+<span class="ltx_td ltx_nopad_r ltx_align_center" id="Sx3.T2.1.1.1.7.2.1.1.1.1">Look-back</span></span>
+<span class="ltx_tr" id="Sx3.T2.1.1.1.7.2.1.1.2">
+<span class="ltx_td ltx_nopad_r ltx_align_center" id="Sx3.T2.1.1.1.7.2.1.1.2.1">Window</span></span>
+</span></span><span class="ltx_text" id="Sx3.T2.1.1.1.7.2.2"></span></span>
+</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_th_row ltx_border_tt" id="Sx3.T2.1.1.1.8">
+<span class="ltx_text" id="Sx3.T2.1.1.1.8.1"></span><span class="ltx_text ltx_font_bold" id="Sx3.T2.1.1.1.8.2" style="font-size:80%;"> <span class="ltx_text" id="Sx3.T2.1.1.1.8.2.1">
+<span class="ltx_tabular ltx_align_middle" id="Sx3.T2.1.1.1.8.2.1.1">
+<span class="ltx_tr" id="Sx3.T2.1.1.1.8.2.1.1.1">
+<span class="ltx_td ltx_nopad_r ltx_align_center" id="Sx3.T2.1.1.1.8.2.1.1.1.1">Forecasting</span></span>
+<span class="ltx_tr" id="Sx3.T2.1.1.1.8.2.1.1.2">
+<span class="ltx_td ltx_nopad_r ltx_align_center" id="Sx3.T2.1.1.1.8.2.1.1.2.1">Window</span></span>
+</span></span><span class="ltx_text" id="Sx3.T2.1.1.1.8.2.2"></span></span>
+</th>
+</tr>
+<tr class="ltx_tr" id="Sx3.T2.1.2.2">
+<td class="ltx_td ltx_align_left ltx_border_t" id="Sx3.T2.1.2.2.1"><span class="ltx_text" id="Sx3.T2.1.2.2.1.1" style="font-size:80%;">Random Forest</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.2"><span class="ltx_text" id="Sx3.T2.1.2.2.2.1" style="font-size:80%;">0.533</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.3"><span class="ltx_text" id="Sx3.T2.1.2.2.3.1" style="font-size:80%;">1.000</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.4"><span class="ltx_text" id="Sx3.T2.1.2.2.4.1" style="font-size:80%;">0.364</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.5"><span class="ltx_text" id="Sx3.T2.1.2.2.5.1" style="font-size:80%;">0.779</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.6"><span class="ltx_text" id="Sx3.T2.1.2.2.6.1" style="font-size:80%;">19</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.7"><span class="ltx_text" id="Sx3.T2.1.2.2.7.1" style="font-size:80%;">1 day</span></td>
+<td class="ltx_td ltx_align_center ltx_border_t" id="Sx3.T2.1.2.2.8"><span class="ltx_text" id="Sx3.T2.1.2.2.8.1" style="font-size:80%;">1 day</span></td>
+</tr>
+<tr class="ltx_tr" id="Sx3.T2.1.3.3">
+<td class="ltx_td ltx_align_left" id="Sx3.T2.1.3.3.1"><span class="ltx_text" id="Sx3.T2.1.3.3.1.1" style="font-size:80%;">XGBoost</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.2"><span class="ltx_text" id="Sx3.T2.1.3.3.2.1" style="font-size:80%;">0.429</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.3"><span class="ltx_text" id="Sx3.T2.1.3.3.3.1" style="font-size:80%;">1.000</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.4"><span class="ltx_text" id="Sx3.T2.1.3.3.4.1" style="font-size:80%;">0.273</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.5"><span class="ltx_text" id="Sx3.T2.1.3.3.5.1" style="font-size:80%;">0.876</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.6"><span class="ltx_text" id="Sx3.T2.1.3.3.6.1" style="font-size:80%;">18</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.7"><span class="ltx_text" id="Sx3.T2.1.3.3.7.1" style="font-size:80%;">1 day</span></td>
+<td class="ltx_td ltx_align_center" id="Sx3.T2.1.3.3.8"><span class="ltx_text" id="Sx3.T2.1.3.3.8.1" style="font-size:80%;">1 day</span></td>
+</tr>
+<tr class="ltx_tr" id="Sx3.T2.1.4.4">
+<td class="ltx_td ltx_align_left ltx_border_bb" id="Sx3.T2.1.4.4.1"><span class="ltx_text" id="Sx3.T2.1.4.4.1.1" style="font-size:80%;">Logistic Regression</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.2"><span class="ltx_text" id="Sx3.T2.1.4.4.2.1" style="font-size:80%;">0.071</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.3"><span class="ltx_text" id="Sx3.T2.1.4.4.3.1" style="font-size:80%;">0.037</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.4"><span class="ltx_text" id="Sx3.T2.1.4.4.4.1" style="font-size:80%;">0.833</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.5"><span class="ltx_text" id="Sx3.T2.1.4.4.5.1" style="font-size:80%;">0.758</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.6"><span class="ltx_text" id="Sx3.T2.1.4.4.6.1" style="font-size:80%;">8</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.7"><span class="ltx_text" id="Sx3.T2.1.4.4.7.1" style="font-size:80%;">1 day</span></td>
+<td class="ltx_td ltx_align_center ltx_border_bb" id="Sx3.T2.1.4.4.8"><span class="ltx_text" id="Sx3.T2.1.4.4.8.1" style="font-size:80%;">1 day</span></td>
+</tr>
+</tbody>
+</table>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+<section class="ltx_subsection" id="Sx3.SSx4">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">DeepHit Model</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<section class="ltx_subsubsection" id="Sx3.SSx4.SSSx1">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Chronological Train/Test Split</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx4.SSSx1.p1">
+<p class="ltx_p" id="Sx3.SSx4.SSSx1.p1.1">The model was trained on the first 80 percent of the dataset in chronological order. Training data imputed with linear interpolation achieved a C-index of 0.660 which was increased to 0.762 with training data imputed using the bespoke method.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsubsection" id="Sx3.SSx4.SSSx2">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">LOPO Split</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx4.SSSx2.p1">
+<p class="ltx_p" id="Sx3.SSx4.SSSx2.p1.1">With LOPO training, the interquartile range of C-indices across players was 0.192 (Figure 3), indicating a wide variability in model generalisability. The highest predictive performance observed produced a C-index of 0.974, while for others, the model performed poorly. Correlation analyses revealed a weak positive correlation between C-index and the number of sessions tracked (r = 0.44). No correlation was observed between C-index and the number of injuries (r =–0.08). Higher within-player variance in training load and behavioural patterns reduced predictive performance, as did players who were clear outliers relative to their teammates.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_figure" id="Sx3.F3"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_landscape" height="297" id="Sx3.F3.g1" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/fig3.png" width="598">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>Predicted injury risk over time by a DeepHit model trained using a LOPO method. Red dotted lines indicate injury occurrences.</figcaption>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+<section class="ltx_subsubsection" id="Sx3.SSx4.SSSx3">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Model Explainability - Case Study</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx3.SSx4.SSSx3.p1">
+<p class="ltx_p" id="Sx3.SSx4.SSSx3.p1.1">As a proof of concept, the player with the highest C-index after LOPO training was analysed. The risk predicted by the model successfully peaked ahead of a real injury occurrence twice. Across the data-collection period, this player’s key injury risk factors were high stress, high high-intensity running volume, low mood, and low sleep quality. Similar features were involved on a specific day flagged as high risk, but with high fatigue also serving as a primary contributor to the high-risk prediction (Figure 4). Notably, this player sustained an acute thigh injury following this period of elevated predicted risk.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<figure class="ltx_figure" id="Sx3.F4"><img alt="Refer to caption" class="ltx_graphics ltx_centering ltx_img_square" height="418" id="Sx3.F4.g1" src="./Time-to-Injury Forecasting in Elite Female Football_ A DeepHit Survival Approach_files/fig4.png" width="509">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span>Results of SHAP analysis determining the features that most influenced a prediction of elevated injury risk for one player on one day.</figcaption>
+</figure><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</section>
+</section>
+</section>
+<section class="ltx_section" id="Sx4">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Discussion</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.p1">
+<p class="ltx_p" id="Sx4.p1.1">This study offers novel insight into the application of a DeepHit model for sport-injury forecasting with findings that outperform baseline models in accuracy and clinical utility.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<section class="ltx_subsection" id="Sx4.SSx1">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Forecasting Insights</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<section class="ltx_subsubsection" id="Sx4.SSx1.SSSx1">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Baseline Models</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx1.SSSx1.p1">
+<p class="ltx_p" id="Sx4.SSx1.SSSx1.p1.1">Out of three baseline models trained chronologically, the Random Forest model performed the best. It produced no false positives while correctly identifying 36.4% of injury cases, and was the only model to achieve an F1 score above 0.5 (0.533). Although an F1 score of 0.533 would typically be considered modest in broader ML contexts (Wingrove et al., 2020) - within the constraints of this highly imbalanced and complex dataset, it represents a promising outcome. Whilst the XGBoost model also performed well, the superior performance of the Random Forest may reflect its ensemble architecture being better suited to managing nonlinear relationships and class imbalance than Logistic Regression (linear) and XGBoost (boosting-based) architectures.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx4.SSx1.SSSx1.p2">
+<p class="ltx_p" id="Sx4.SSx1.SSSx1.p2.1">These findings align with previous research identifying Random Forest and XGBoost as leading models for sports injury prediction (Leckey et al., 2024). Their performance is often similar but varies by sport and predictive task. For instance, XGBoost outperformed in forecasting next-season injuries in ice hockey (Luu et al., 2020), while Random Forest performed best in a comparable baseball study (Karnuta et al., 2020). Such variation likely reflects sport-specific injury mechanisms and contexts, such as differing contact levels. The average AUC of sports injury models is 0.69 (Leckey et al., 2024), which both models surpassed here when using current-day data to predict next-day injuries - indicating that the dataset captured meaningful injury-risk patterns. However, the F1 score of 0.533 was below the literature average of 0.73 (Leckey et al., 2024), suggesting a need to improve recall and overall predictive balance.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsubsection" id="Sx4.SSx1.SSSx2">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">DeepHit Model</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx1.SSSx2.p1">
+<p class="ltx_p" id="Sx4.SSx1.SSSx2.p1.1">The best DeepHit model iteration used data imputed via the bespoke formula and achieved a concordance index (C-index) of 0.762. This indicates strong discriminative ability, with nearly 80% of player-day pairs correctly ranked by relative injury risk. Within survival analysis literature, C-index values above 0.7 are considered acceptable, while values above 0.8 are regarded as strong (Longato, Vettoretti &amp; Di Camillo, 2020). Thus, achieving 0.762 is a highly encouraging outcome given the challenging nature of the dataset and the relatively limited degree of model tuning undertaken. Although little research has examined the influence of imputation strategies on DeepHit specifically, it is plausible that the bespoke approach outperformed linear interpolation because it preserved sharp fluctuations in the data that often precede injuries.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx4.SSx1.SSSx2.p2">
+<p class="ltx_p" id="Sx4.SSx1.SSSx2.p2.1">The DeepHit model was trained and evaluated using a LOPO approach. Whilst this setup is less representative of real-world deployment, it offers valuable insight into how well the model generalises to unseen players - a key consideration when integrating new squad members. A C-index was calculated for each held-out player, revealing substantial variability (IQR = 0.192), and indicating room for improvement in generalisation. Performance ranged widely (up to C-index = 0.974), suggesting the model captured risk dynamics that were highly predictive for some players, particularly those with consistent reporting and clear links between training load and injury outcomes. But the same model struggled with players whose data were irregular, sparse, or distinct from team norms. These individuals may represent outliers due to unique training characteristics or reporting styles. Incorporating contextual factors such as playing position, role-specific workloads, or player archetypes could reduce this variability (Shimakawa et al., 2025), whilst personalisation strategies, such as fine-tuning with individual data, may further enhance robustness across diverse player profiles.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+</section>
+<section class="ltx_subsection" id="Sx4.SSx2">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Explainability</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx2.p1">
+<p class="ltx_p" id="Sx4.SSx2.p1.1">The deployment of ML models in real-life sports medicine practice requires the development of trust from practitioners and the output of actionable coaching insights. It is therefore essential that models are designed to deliver explanations alongside their injury-risk predictions in terms of what key features are influencing risk so that coaches can alter training protocols accordingly.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<section class="ltx_subsubsection" id="Sx4.SSx2.SSSx1">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Feature Importance</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx2.SSSx1.p1">
+<p class="ltx_p" id="Sx4.SSx2.SSSx1.p1.1">One method of enhancing explainability is via feature importance analysis. With the SoccerMon dataset, the most influential features aligned with previous injury-risk findings (Ekstrand et al., 2023), including average running speed, soreness, monotony, and prior injury count, supporting the model’s validity. However, several results diverged from expectations. For instance, time [of training session] was more important than expected, while acute to chronic workload ratio (ACWR), sprint-related metrics, and subjective stress contributed little. These discrepancies warrant cautious interpretation. The prominence of time may reflect a proxy for session type if higher-risk sessions occur at specific times of day, whilst the limited impact of sprint metrics could stem from low sprint thresholds that underrepresented meaningful sprint events. ACWR effects may also have been diluted by the 21-day input window. Notably, subjective missingness emerged as a key predictor, possibly indicating that players withhold responses when anticipating injury or that low engagement with monitoring reflects reduced adherence to training or recovery protocols - both potential risk factors. Collectively, these findings highlight the importance of thoughtful feature design and interpretation in injury prediction models and demonstrate SHAP’s value in revealing non-intuitive risk-factor relationships.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsubsection" id="Sx4.SSx2.SSSx2">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Explainability of The DeepHit Model</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx2.SSSx2.p1">
+<p class="ltx_p" id="Sx4.SSx2.SSSx2.p1.1">Using the DeepHit model and SHAP analysis, feature importance was ranked for a high-risk prediction day following LOPO training. Elevated stress, high-intensity running, low mood, and increased fatigue raised predicted injury-risk, while greater readiness and longer sleep had modest protective effects. This pattern preceded an acute thigh injury and aligns with prior research linking training load, fatigue, and psychological stress to acute injuries (Sampson et al., 2019). Furthermore, the key features on this day differed from those identified globally for the same player, suggesting the model can detect context-specific risk fluctuations rather than relying solely on stable, season-long patterns. This represents one of the first applications of survival modelling in sport to offer explainability at the individual player-day level, providing a proof of concept for personalised, daily injury-risk interpretation. Such insights could help practitioners make targeted adjustments to training, for example, addressing elevated stress as a short-term risk signal, or soreness as a marker of cumulative fatigue.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+</section>
+<section class="ltx_subsection" id="Sx4.SSx3">
+<h3 class="ltx_title ltx_font_bold ltx_font_italic ltx_title_subsection" style="font-size:120%;--ltx-fg-color:#A6281E;">Limitations and Future Work</h3><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<section class="ltx_subsubsection" id="Sx4.SSx3.SSSx1">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">Experimental Design</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx3.SSSx1.p1">
+<p class="ltx_p" id="Sx4.SSx3.SSSx1.p1.1">The experimental design is strong in its use of varied imputation methods, chronological test-train split, and evaluation methods (Altalhan, Algarni and Alouane, 2025). Future work should expand on this foundation by replicating real-world deployment of ML models by gradually feeding the model data, and evaluating the updated predictions over time (rolling-origin evaluation). Further, hyperparameter tuning and feature engineering should be investigated too, with additional contextual factors such as playing position being taken into account.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsubsection" id="Sx4.SSx3.SSSx2">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">DeepHit Model</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx3.SSSx2.p1">
+<p class="ltx_p" id="Sx4.SSx3.SSSx2.p1.1">The DeepHit model demonstrated considerable promise as a proof of concept for time-to-injury prediction with encouraging predictive performance and strong concordance with existing literature on injury risk factors. Its implementation here is based on a multilayer perceptron (MLP) backbone but it is thought that Dynamic-DeepHit models with a recurrent neural network (RNN) backbone could provide superior predictive performance and better handling of temporal data. Future work should evaluate this hypothesis, but would require rich data with evenly spaced temporal inputs and a very low degree of missingness. The missingness and irregular temporal spacing between entries in the SoccerMon dataset made this infeasible here, so the curation and dissemination of high-quality datasets is essential for the progression of this research avenue.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx4.SSx3.SSSx2.p2">
+<p class="ltx_p" id="Sx4.SSx3.SSSx2.p2.1">Future investigations would also benefit from developing the model to inherently handle missing data; accounting for non-training days and irregular gaps; developing per-player risk thresholds; incorporating time since last injury to better model reinjury risk; and extending the prediction horizon beyond one week. Coupled with a suitable interface for coaches, these steps would help move the model from a research prototype towards a deployable decision-support tool.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_subsubsection" id="Sx4.SSx3.SSSx3">
+<h4 class="ltx_title ltx_font_italic ltx_title_subsubsection" style="--ltx-fg-color:#A6281E;">SoccerMon Dataset</h4><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx4.SSx3.SSSx3.p1">
+<p class="ltx_p" id="Sx4.SSx3.SSSx3.p1.1">The dataset itself represents a major strength of this project. It provides multimodal information combining objective load and physiological data with subjective well-being reports, and is based on female professional athletes: an underrepresented group in literature (Paul et al., 2022). Furthermore, because the data sources were relatively low-cost and easily collectable, this approach could be replicated by resource-limited teams at lower playing levels, expanding its potential impact beyond elite sport. Therefore, future studies would benefit from reproducing the features present in the SoccerMon dataset. They should also focus on maximising athlete adherence within their investigations, minimising the number of incomplete subjective reports would ensure even coverage between players and increase predictive performance. Additional features, such as menstrual cycle information, biomarkers, or routine movement screening data, could further enrich the dataset and improve model performance, though these may be harder to collect consistently. Overall, expanding datasets to include more injuries, players, teams, and demographics would both improve the robustness of the DeepHit model and broaden its applicability.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+</section>
+</section>
+<section class="ltx_section" id="Sx5">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Conclusion</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx5.p1">
+<p class="ltx_p" id="Sx5.p1.1">This study demonstrates the feasibility of forecasting sports injuries using athlete monitoring data and a DeepHit machine learning model. The SoccerMon athlete monitoring dataset is used and evaluated, which is based on elite female footballers and contains objective and subjective features (Midoglu et al., 2024). Median imputation, linear interpolation, and a bespoke formula are trialed to address data missingness, with the bespoke imputation formula resulting in the best DeepHit performance. Feature importance and SHAP explainability are used to investigate the features influencing injury-risk prediction both on a season-wide and a day-to-day scale.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx5.p2">
+<p class="ltx_p" id="Sx5.p2.1">The DeepHit survival model, benchmarked against Random Forest, XGBoost, and Logistic Regression on the SoccerMon dataset, achieved the strongest performance with a concordance index of 0.762 using the bespoke imputation method - accurately ranking injury risk in nearly 80% of cases. Unlike baseline classifiers, DeepHit generated individualised, time-varying risk estimates, explained by SHAP analysis, that aligned with known injury mechanisms such as load, stress, and recovery. It offers both predictive power and interpretability, which would be critical for practitioner trust and adoption.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx5.p3">
+<p class="ltx_p" id="Sx5.p3.1">Future research should focus on expanding the accessibility of larger, multi-team, longitudinal athlete monitoring datasets, with SoccerMon setting a good example of the feature set required for strong predictive performance. Minimising missingness and providing evenly spaced temporal data should be prioritised in order to construct and evaluate advanced model architectures (e.g. Dynamic DeepHit) with enhanced personalisation strategies to enhance generalisation. Real-time deployment and practitioner-facing interfaces will also be key to translation into practice.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_para" id="Sx5.p4">
+<p class="ltx_p" id="Sx5.p4.1">Overall, this work highlights the potential of survival-based deep learning to advance sports injury forecasting. With such promising predictive performance and detailed model explainability, this work could serve as the foundation for further development and broader validation. In future, DeepHit modelling has the capacity to play a significant role in supporting athlete health, optimising training load management, and addressing the persistent challenge of sports injuries within both elite and grassroots settings.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+<div class="ltx_pagination ltx_role_end_2_columns"></div>
+</section>
+<section class="ltx_section" id="Sx6">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Acknowledgement(s)</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx6.p1">
+<p class="ltx_p" id="Sx6.p1.1">Victoria Catterall would like to thank Professor Stephen Lynch for his help and encouragement throughout the development of this paper, and Dr Cise Midoglu and her team in Norway for their insight and collaboration on this project.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_section" id="Sx7">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Disclosure Statement</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx7.p1">
+<p class="ltx_p" id="Sx7.p1.1">The authors declare no conflict of interest.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_section" id="Sx8">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Funding</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx8.p1">
+<p class="ltx_p" id="Sx8.p1.1">This research recieved no external funding.</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_section" id="Sx9">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Notes on Contributors</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx9.p1">
+<p class="ltx_p" id="Sx9.p1.1">Conceptualisation: VC,
+Methodology: VC &amp; CM,
+Software: VC,
+Validation: SL,
+Formal analysis: VC,
+Investigation: VC &amp; CM,
+Data curation: CM &amp; VC,
+Writing - original draft: VC,
+Writing - review &amp; editing: CM &amp; SL &amp; VC,
+Visualisation: VC,
+Supervision: SL</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_section" id="Sx10">
+<h2 class="ltx_title ltx_font_bold ltx_title_section" style="font-size:144%;--ltx-fg-color:#A6281E;">Data Availability Statement</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<div class="ltx_para" id="Sx10.p1">
+<p class="ltx_p" id="Sx10.p1.1">SoccerMon data is openly available in a public repository that issues datasets with DOIs (<span class="ltx_ref ltx_nolink ltx_url ltx_font_typewriter ltx_ref_self">https://zenodo.org/records/10033832</span>).
+Objective injury report data is not openly available due to legal restrictions.
+Code is openly available in a public repository that does not issue DOIs (<span class="ltx_ref ltx_nolink ltx_url ltx_font_typewriter ltx_ref_self">https://github.com/simulamet-host/soccermon-deephit</span>).</p><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+</div>
+</section>
+<section class="ltx_bibliography" id="bib">
+<h2 class="ltx_title ltx_title_bibliography">References</h2><button class="sr-only button" style="display: none;">Report issue for preceding element</button>
+<ul class="ltx_biblist">
+<li class="ltx_bibitem" id="bib.bib1">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[1]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Altalhan, M., Algarni, A., and Turki-Hadj Alouane, M. (2025). Imbalanced data problem in machine learning: a review. <span class="ltx_text ltx_font_italic" id="bib.bib1.1.1">IEEE Access</span>, 13, 13686-13699. doi: 10.1109/access.2025.3531662
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib2">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[2]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Katal, A., Verma, I., Gupta, I., Midha, D., and Armugam, N. (2025). The Use of AI and machine learning in injury risk predictions and analyzing movements - a narrative review. <span class="ltx_text ltx_font_italic" id="bib.bib2.1.1">International Journal of Novel Research and Development.</span>, 10(01). doi: 10.56975/ijnrd.v10i4.306009
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib3">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[3]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Borg, A. F., Falzon, R., and Muscat, A. (2021). Psychological implications and rehabilitation programmes due to football‐related injuries. <span class="ltx_text ltx_font_italic" id="bib.bib3.1.1">Counselling and Psychotherapy Research</span>, 21(07), 882-898. doi: 10.1002/capr.12444
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib4">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[4]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Camattari, F., Guastavino, S., Marchetti, F., Piana, M., and Perracchione, E. (2024). Classifier-dependent feature selection via greedy methods. <span class="ltx_text ltx_font_italic" id="bib.bib4.1.1">Statistics and Computing</span>, 34(07). doi: 10.1007/s11222-024-10460-2
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib5">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[5]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Castilla-López, C., and Romero-Franco, N. (2024). Well-being fluctuations and injuries during an entire season in male professional soccer players: an observational study. <span class="ltx_text ltx_font_italic" id="bib.bib5.1.1">Research in Sports Medicine</span>, 32(03), 1028-1040. doi: 10.1080/15438627.2024.2330959
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib6">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[6]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Datson, N., Drust, B., Weston, M., Jarman, I. H., Lisboa, P. J., and Gregson, W. (2017). Match physical performance of elite female soccer players during international competition. <span class="ltx_text ltx_font_italic" id="bib.bib6.1.1">Journal of Strength and Conditioning Research</span>, 31(09), 2379-2387. doi: 10.1519/jsc.0000000000001575
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib7">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[7]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Delecroix, B., McCall, A., Dawson, B., Berthoin, S., and Dupont, G. (2018). Workload and non-contact injury incidence in elite football players competing in European leagues. <span class="ltx_text ltx_font_italic" id="bib.bib7.1.1">European Journal of Sport Science</span>, 18(06), 1280-1287. doi: 10.1080/17461391.2018.1477994
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib8">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[8]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Ekstrand, J., Ueblacker, P., Van Zoest, W., Verheijen, R., Vanhecke, B., van Wijk, M., and Bengtsson, H. (2023). Risk factors for hamstring muscle injury in male elite football: medical expert experience and conclusions from 15 European Champions League clubs. <span class="ltx_text ltx_font_italic" id="bib.bib8.1.1">BMJ Open Sport &amp; Exercise Medicine</span>, 9(01), e001461. doi: 10.1136/bmjsem-2022-001461
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib9">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[9]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Eliakim, E., Morgulev, E., Lidor, R., and Meckel, Y. (2020). Estimation of injury costs: financial damage of English Premier League teams’ underachievement due to injuries. <span class="ltx_text ltx_font_italic" id="bib.bib9.1.1">BMJ Open Sport &amp; Exercise Medicine</span>, 6(05), e000675. doi: 10.1136/bmjsem-2019-000675
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib10">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[10]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Gashi, F., Kovacic, T., Ibrahimaj Gashi, A., Boshnjaku, A., and Shalaj, I. (2023). Predicting risk factors of lower extremity injuries in elite women’s football: systematic review and meta-analysis. <span class="ltx_text ltx_font_italic" id="bib.bib10.1.1">Sports</span>, 11(09), 187-187. doi: 10.3390/sports11090187
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib11">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[11]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Gerds, T. A., and Schumacher, M. (2006). Consistent estimation of the expected Brier Score in general survival models with right-censored event times. <span class="ltx_text ltx_font_italic" id="bib.bib11.1.1">Biometrical Journal</span>, 48(12), 1029-1040. doi: 10.1002/bimj.200610301
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib12">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[12]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Ghosh, I., Ramamurthy, S. R., Chakma, A., and Roy, N. (2023). Sports analytics review: artificial intelligence applications, emerging technologies, and algorithmic perspective. <span class="ltx_text ltx_font_italic" id="bib.bib12.1.1">Wiley Interdisciplinary Reviews-Data Mining and Knowledge Discovery</span>, 13(03). doi: 10.1002/widm.1496
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib13">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[13]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Hulteen, R.M., Smith, J.J., Morgan, P.J., Barnett, L.M., Hallal, P.C., Colyvas, K. and Lubans, D.R. (2017). Global participation in sport and leisure-time physical activities: a systematic review and meta-analysis.
+<span class="ltx_text ltx_font_italic" id="bib.bib13.1.1">Preventive Medicine</span>, 95(1), pp.14–25. doi:10.1016/j.ypmed.2016.11.027.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib14">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[14]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Hägglund, M., Waldén, M., Magnusson, H., Kristenson, K., Bengtsson, H., and Ekstrand, J. (2013). Injuries affect team performance negatively in professional football: an 11-year follow-up of the UEFA Champions League injury study. <span class="ltx_text ltx_font_italic" id="bib.bib14.1.1">British Journal of Sports Medicine</span>, 47(05), 738-742. doi: 10.1136/bjsports-2013-092215
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib15">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[15]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Jarmann, A. L. (2023). <span class="ltx_text ltx_font_italic" id="bib.bib15.1.1">Identifying Injury Risk Factors for Elite Soccer Teams Using Survival Analysis</span> (PhD thesis - University of Oslo).
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib16">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[16]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Johansen, H. D., Johansen, D., Kupka, T., Riegler, M. A., and Halvorsen, P. (2020). Scalable Infrastructure for Efficient Real-Time Sports Analytics. <span class="ltx_text ltx_font_italic" id="bib.bib16.1.1">Companion Publication of the 2020 International Conference on Multimodal Interaction</span>. doi: 10.1145/3395035.3425300
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib17">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[17]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+John, G., AlNadwi, A., Georges Abi Antoun, T. and Ahmetov, I.I. (2025). Injury prevention strategies in female football players: addressing sex-specific risks. <span class="ltx_text ltx_font_italic" id="bib.bib17.1.1">Sports</span>, 13(2), p.39. doi:https://doi.org/10.3390/sports13020039.
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib18">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[18]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Karnuta, J. M., Luu, B. C., Haeberle, H. S., Saluan, P. M., Frangiamore, S. J., Stearns, K. L., Farrow, L. D., Nwachukwu, B. U., Verma, N. N., Makhni, E. C., Schickendantz, M. S., and Ramkumar, P. N. (2020). Machine learning outperforms regression analysis to predict next-season Major League Baseball player injuries: epidemiology and validation of 13,982 player-years from performance and injury profile trends, 2000-2017. <span class="ltx_text ltx_font_italic" id="bib.bib18.1.1">Orthopaedic Journal of Sports Medicine</span>, 8(11), 232596712096304. doi: 10.1177/2325967120963046
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib19">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[19]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Lee, C., Yoon, J., and Schaar, M. van der. (2020). Dynamic-DeepHit: a deep learning approach for dynamic survival analysis with competing risks based on longitudinal data. <span class="ltx_text ltx_font_italic" id="bib.bib19.1.1">IEEE Transactions on Biomedical Engineering</span>, 67(01), 122-133. doi: 10.1109/tbme.2019.2909027
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib20">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[20]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Lin, L., Li, P., Wang, Q., Bai, B., Cui, R., Yu, Z., Gao, D., and Zhang, Y. (2023). An EEG-based cross-subject interpretable CNN for game player expertise level classification. <span class="ltx_text ltx_font_italic" id="bib.bib20.1.1">Expert Systems with Applications</span>, 237(09), 121658-121658. doi: 10.1016/j.eswa.2023.121658
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib21">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[21]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Longato, E., Vettoretti, M., and Di Camillo, B. (2020). A practical perspective on the concordance index for the evaluation and selection of prognostic time-to-event models. <span class="ltx_text ltx_font_italic" id="bib.bib21.1.1">Journal of Biomedical Informatics</span>, 108(08), 103496. doi: 10.1016/j.jbi.2020.103496
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib22">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[22]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Luu, B. C., Wright, A. L., Haeberle, H. S., Karnuta, J. M., Schickendantz, M. S., Makhni, E. C., Nwachukwu, B. U., Williams, R. J., and Ramkumar, P. N. (2020). Machine learning outperforms logistic regression analysis to predict next-season NHL player injury: an analysis of 2322 players from 2007 to 2017. <span class="ltx_text ltx_font_italic" id="bib.bib22.1.1">Orthopaedic Journal of Sports Medicine</span>, 8(09), 232596712095340. doi: 10.1177/2325967120953404
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib23">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[23]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Mahmood, A., Ullah, S., and Finch, C. F. (2014). Application of survival models in sports injury prevention research: a systematic review. <span class="ltx_text ltx_font_italic" id="bib.bib23.1.1">British Journal of Sports Medicine</span>, 48(03), 630.2-630. doi: 10.1136/bjsports-2014-093494.190
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib24">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[24]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Mandorino, M., Figueiredo, A. J., Gjaka, M., and Tessitore, A. (2023). Injury incidence and risk factors in youth soccer players: a systematic literature review. Part II: Intrinsic and extrinsic risk factors. <span class="ltx_text ltx_font_italic" id="bib.bib24.1.1">Biology of Sport</span>, 40. doi: 10.5114/biolsport.2023.109962
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib25">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[25]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Matijašević, P., and Rajković Vuletić, P. (2024). Relationship between injuries and motivation in recreational runners. <span class="ltx_text ltx_font_italic" id="bib.bib25.1.1">Journal of Kinesiology and Exercise Sciences</span>, 34(11), 24-30. doi: 10.5604/01.3001.0054.8525
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib26">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[26]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Midoglu, C., Winther, A. K., Boeker, M., Pettersen, S. D., Pedersen, S., Ragab, N., Kupka, T., Hicks, S. A., Randers, M. B., Jain, R., Dagenborg, H. J., Pettersen, S. A., Johansen, D., Riegler, M. A., and Halvorsen, P. (2024). A large-scale multivariate soccer athlete health, performance, and position monitoring dataset. <span class="ltx_text ltx_font_italic" id="bib.bib26.1.1">Scientific Data</span>, 11(05), 553. doi: 10.1038/s41597-024-03386-x
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib27">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[27]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Musat, C. L., Mereuta, C., Nechita, A., Tutunaru, D., Voipan, A. E., Voipan, D., Mereuta, E., Gurau, T. V., Gurău, G., and Nechita, L. C. (2024). Diagnostic applications of AI in sports: a comprehensive review of injury risk prediction Methods. <span class="ltx_text ltx_font_italic" id="bib.bib27.1.1">Diagnostics</span>, 14(11), 2516. doi: 10.3390/diagnostics14222516
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib28">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[28]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Paul, R. W., Sonnier, J. H., Johnson, E. E., Hall, A. T., Osman, A., Connors, G. M., Freedman, K. B., and Bishop, M. E. (2022). Inequalities in the evaluation of male versus female athletes in sports medicine research: a systematic review. <span class="ltx_text ltx_font_italic" id="bib.bib28.1.1">The American Journal of Sports Medicine</span>, 51(12), 036354652211312. doi: 10.1177/03635465221131281
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib29">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[29]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Reddy, G. T., Reddy, M. P. K., Lakshmanna, K., Kaluri, R., Rajput, D. S., Srivastava, G., and Baker, T. (2020). Analysis of dimensionality reduction techniques on big data. <span class="ltx_text ltx_font_italic" id="bib.bib29.1.1">IEEE Access</span>, 8, 54776–54788. doi: 10.1109/ACCESS.2020.2980942
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib30">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[30]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Rommers, N., Rössler, R., Goossens, L., Vaeyens, R., Lenoir, M., Witvrouw, E., and D’Hondt, E. (2020). Risk of acute and overuse injuries in youth elite soccer players: body size and growth matter. <span class="ltx_text ltx_font_italic" id="bib.bib30.1.1">Journal of Science and Medicine in Sport</span>, 23(03), 246-251. doi: 10.1016/j.jsams.2019.10.001
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib31">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[31]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Rossi, A., Pappalardo, L., and Cintia, P. (2021). A narrative review for a machine learning application in sports: an example based on injury forecasting in soccer. <span class="ltx_text ltx_font_italic" id="bib.bib31.1.1">Sports</span>, 10(12), 5. doi: 10.3390/sports10010005
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib32">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[32]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Salam, M. A., Taher, A., Samy, M., and Mohamed, K. (2021). The effect of different dimensionality reduction techniques on machine learning overfitting problem. <span class="ltx_text ltx_font_italic" id="bib.bib32.1.1">International Journal of Advanced Computer Science and Applications</span>, 12(04). doi: 10.14569/ijacsa.2021.0120480
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib33">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[33]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Sampson, J. A., Murray, A., Williams, S., Sullivan, A., and Fullagar, H. H. K. (2019). Subjective wellness, acute: chronic workloads, and injury risk in college football. <span class="ltx_text ltx_font_italic" id="bib.bib33.1.1">Journal of Strength and Conditioning Research</span>. doi: 10.1519/jsc.0000000000003000
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib34">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[34]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Shimakawa, T., Galmiche, S., Ueda, S., and Shimakawa, Y. (2025). Injuries and risk factors in men’s beach soccer: Japanese national championships 2013–2023. <span class="ltx_text ltx_font_italic" id="bib.bib34.1.1">Science and Medicine in Football</span>, 1-10. doi: 10.1080/24733938.2025.2558580
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib35">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[35]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Silva, H., Nakamura, F. Y., Castellano, J., and Marcelino, R. (2023). Training load within a soccer microcycle week—a systematic review. <span class="ltx_text ltx_font_italic" id="bib.bib35.1.1">Strength &amp; Conditioning Journal</span>, 45(5), 568-577. doi: 10.1519/ssc.0000000000000765
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib36">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[36]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Theerthagiri, P., and Vidya, J. (2022). Cardiovascular disease prediction using recursive feature elimination and gradient boosting classification techniques. <span class="ltx_text ltx_font_italic" id="bib.bib36.1.1">Expert Systems</span>. doi: 10.1111/exsy.13064
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib37">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[37]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Turkson, A. J., Ayiah-Mensah, F., and Nimoh, V. (2021). Handling censoring and censored data in survival analysis: a standalone systematic literature review. <span class="ltx_text ltx_font_italic" id="bib.bib37.1.1">International Journal of Mathematics and Mathematical Sciences</span>, 2021(09), 1-16. doi: 10.1155/2021/9307475
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib38">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[38]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Van Eetvelde, H., Mendonça, L. D., Ley, C., Seil, R., and Tischer, T. (2021). Machine learning methods in sport injury prediction and prevention: a systematic review. <span class="ltx_text ltx_font_italic" id="bib.bib38.1.1">Journal of Experimental Orthopaedics</span>, 8(04). doi: 10.1186/s40634-021-00346-x
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib39">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[39]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Vescovi, J. D. (2018). Women’s soccer velocity thresholds: statistical techniques or physiological metrics – context is critical. <span class="ltx_text ltx_font_italic" id="bib.bib39.1.1">Science and Medicine in Football</span>, 3(12), 81-82. doi: 10.1080/24733938.2018.1562278
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib40">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[40]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Wang, H., Liang, Q., Hancock, J. T., and Khoshgoftaar, T. M. (2024). Feature selection strategies: a comparative analysis of SHAP-value and importance-based methods. <span class="ltx_text ltx_font_italic" id="bib.bib40.1.1">Journal of Big Data</span>, 11(03). doi: 10.1186/s40537-024-00905-w
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib41">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[41]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Wingrove, P., Liaw, W., Weiss, J., Petterson, S., Maier, J., and Bazemore, A. (2020). Using machine learning to predict primary care and advance workforce research. <span class="ltx_text ltx_font_italic" id="bib.bib41.1.1">The Annals of Family Medicine</span>, 18(04), 334-340. doi: 10.1370/afm.2550
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib42">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[42]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Yang, X., Li, J., and Jiang, X. (2024). Research on information leakage in time series prediction based on empirical mode decomposition. <span class="ltx_text ltx_font_italic" id="bib.bib42.1.1">Scientific Reports</span>, 14(11). doi: 10.1038/s41598-024-80018-9
+
+</span>
+</li>
+<li class="ltx_bibitem" id="bib.bib43">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">[43]<button class="back-to-reference-btn" aria-label="Back to the article">↑</button></span>
+<span class="ltx_bibblock">
+Zhu, Y., Jiang, M., and Yamamoto, T. (2022). Glocal map-matching algorithm for high-frequency and large-scale GPS data. <span class="ltx_text ltx_font_italic" id="bib.bib43.1.1">Journal of Intelligent Transportation Systems</span>, 1-15. doi: 10.1080/15472450.2022.2086805
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+
+</div>
+
+
+<button type="button" class="btn btn-primary hover-rp-button" id="openForm">Report Issue</button><div class="modal" id="myForm" role="dialog" aria-labelledby="modal-title"><div class="modal-dialog"><form class="modal-content" id="myFormContent" enctype="multipart/form-data"><div class="modal-header" id="modal-header"><h5 class="modal-title">Report GitHub Issue</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><label for="form_title" id="modalTitle">Title:</label><input class="form-control" id="form_title" name="form_title" required="required" placeholder="Enter title"><label for="description" id="selectedTextModalDescription" style="display: none;">Content selection saved. Describe the issue below:</label><label for="description" id="nomralModalDescription">Description:</label><textarea class="form-control" id="description" name="description" required="required" style="height: 80px;" maxlength="500" placeholder="500 characters maximum"></textarea></div><div class="modal-footer d-flex justify-content-end"><button type="submit" class="sr-only button" id="modal-submit-sr">Submit without GitHub</button><button type="submit" class="btn btn-primary" id="modal-submit">Submit in GitHub</button></div></form></div></div><button id="small-report-button" type="button" class="btn btn-secondary btn-sm" style="background-color: rgb(179, 27, 27); position: fixed; display: none;">Report Issue for Selection</button><div class="ltx_page_footer">
+        <div class="ltx_page_logo">
+            Generated by
+            <a href="https://math.nist.gov/~BMiller/LaTeXML/" class="ltx_LaTeXML_logo">
+                <span style="letter-spacing: -0.2em; margin-right: 0.1em;">
+                    L
+                    <span style="font-size: 70%; position: relative; bottom: 2.2pt;">A</span>
+                    T
+                    <span style="position: relative; bottom: -0.4ex;">E</span>
+                </span>
+                <span class="ltx_font_smallcaps">xml</span>
+                <img alt="[LOGO]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==">
+            </a>
+        </div></div><footer id="footer" class="ltx_document">
+        <div class="keyboard-glossary">
+            <h2>Instructions for reporting errors</h2>
+            <p>We are continuing to improve HTML versions of papers, and your feedback helps enhance accessibility and mobile support. To report errors in the HTML that will help us improve conversion and rendering, choose any of the methods listed below:</p>
+            <ul>
+                <li>Click the "Report Issue" button.</li>
+                <li>Open a report feedback form via keyboard, use "<strong>Ctrl + ?</strong>".</li>
+                <li>Make a text selection and click the "Report Issue for Selection" button near your cursor.</li>
+                <li class="sr-only">You can use Alt+Y to toggle on and Alt+Shift+Y to toggle off accessible reporting links at each section.</li>
+            </ul>
+            <p>Our team has already identified <a class="ltx_ref" href="https://github.com/arXiv/html_feedback/issues" target="_blank">the following issues</a>. We appreciate your time reviewing and reporting rendering errors we may not have found yet. Your efforts will help us improve the HTML versions for all readers, because disability should not be a barrier to accessing research. Thank you for your continued support in championing open access for all.</p>
+            <p>Have a free development cycle? Help support accessibility at arXiv! Our collaborators at LaTeXML maintain a <a class="ltx_ref" href="https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML" target="_blank">list of packages that need conversion</a>, and welcome <a class="ltx_ref" href="https://github.com/brucemiller/LaTeXML/issues" target="_blank">developer contributions</a>.</p>
+        </div>
+    </footer></body></html>
