@@ -1,1 +1,5 @@
 --- LINKS FOR SOURCES THAT ARE NOT EASILY DOWNLOADABLE -- 
+- SoccerMon: A Large Scale Multivariate...: https://zenodo.org/records/10033832 (abstract for SoccerMon + full dataset) 
+- Soccer Dashboard: https://soccer-dashboard-v2.streamlit.app/ (Web app for exploring the SoccerMon dataset) 
+- What Is Sports Science?: https://www.apu.apus.edu/area-of-study/nursing-and-health-sciences/resources/what-is-sports-science/ (overview of sports science as a field) 
+- Time-to-Injury Forecasting in Elite...: https://arxiv.org/html/2601.19479v1 (Injury forecasting study that uses the SoccerMon dataset; an example of the dataset used in practise) 
